@@ -215,6 +215,7 @@ section{padding:70px 0;}
 }
 .contact-card h4{margin-bottom:6px;font-size:1rem;}
 .contact-card p{opacity:.9;font-size:.95rem;}
+.contact-card a{text-decoration:underline;text-underline-offset:3px;}
 
 /* BOOKING FORM */
 .booking-form{

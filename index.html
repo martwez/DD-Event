@@ -196,8 +196,7 @@
     <h2>Ready to Book Your Party?</h2>
     <p>Fill out the form below with your date and what you're picturing — we'll review it and confirm availability and pricing fast.</p>
 
-    <!-- TODO: replace YOUR_FORM_ID with your real Formspree endpoint (sign up free at formspree.io) -->
-    <form class="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form class="booking-form" action="https://formspree.io/f/mvzezrqo" method="POST" enctype="multipart/form-data">
       <input type="hidden" name="_subject" value="New Dreamy Denz booking inquiry">
 
       <div class="form-row">
@@ -249,21 +248,30 @@
         <textarea id="bf-details" name="details" rows="4" placeholder="Number of kids, setup surface, timing, questions..."></textarea>
       </div>
 
+      <div class="form-group">
+        <label for="bf-inspo">Share Your Party Inspiration (optional)</label>
+        <input type="file" id="bf-inspo" name="inspiration_photos" accept="image/*" multiple>
+      </div>
+
       <button type="submit" class="btn" style="background:#fff;color:var(--pink-dark);border:none;cursor:pointer;">Submit Booking Inquiry</button>
     </form>
 
     <div class="contact-grid">
       <div class="contact-card">
         <h4>📞 Phone</h4>
-        <p>[FILL IN: phone number]</p>
+        <p><a href="tel:+12087051068">(208) 705-1068</a></p>
       </div>
       <div class="contact-card">
         <h4>✉️ Email</h4>
-        <p>[FILL IN: email address]</p>
+        <p><a href="mailto:dreamydenzllc@gmail.com">dreamydenzllc@gmail.com</a></p>
       </div>
       <div class="contact-card">
         <h4>📱 Follow Along</h4>
-        <p>[FILL IN: Facebook / Instagram links]</p>
+        <p>
+          <a href="https://www.instagram.com/dreamy_denz/" target="_blank" rel="noopener">Instagram</a>
+          &nbsp;·&nbsp;
+          <a href="https://www.facebook.com/profile.php?id=61567120238530" target="_blank" rel="noopener">Facebook</a>
+        </p>
       </div>
     </div>
   </div>
