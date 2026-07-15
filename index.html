@@ -194,8 +194,63 @@
 <section class="cta-band" id="contact">
   <div class="container">
     <h2>Ready to Book Your Party?</h2>
-    <p>Reach out with your date, location, and what you're picturing — we'll confirm availability and pricing fast.</p>
-    <a href="#" class="btn" style="background:#fff;color:var(--pink-dark);">Send a Message</a>
+    <p>Fill out the form below with your date and what you're picturing — we'll review it and confirm availability and pricing fast.</p>
+
+    <!-- TODO: replace YOUR_FORM_ID with your real Formspree endpoint (sign up free at formspree.io) -->
+    <form class="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="New Dreamy Denz booking inquiry">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="bf-name">Full Name</label>
+          <input type="text" id="bf-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="bf-email">Email</label>
+          <input type="email" id="bf-email" name="email" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="bf-phone">Phone</label>
+          <input type="tel" id="bf-phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="bf-date">Event Date</label>
+          <input type="date" id="bf-date" name="event_date" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="bf-location">Event Location / Address</label>
+        <input type="text" id="bf-location" name="location" placeholder="City or full address helps us confirm delivery">
+      </div>
+
+      <fieldset class="form-group">
+        <legend>Which rentals are you interested in?</legend>
+        <div class="checkbox-grid">
+          <label class="checkbox-item"><input type="checkbox" name="items" value="Deluxe Dreamy Denz ($300)"> Deluxe Dreamy Denz — $300</label>
+          <label class="checkbox-item"><input type="checkbox" name="items" value="Dreamy Denz ($250)"> Dreamy Denz — $250</label>
+          <label class="checkbox-item"><input type="checkbox" name="items" value="Dreamy Royal ($200)"> Dreamy Royal — $200</label>
+          <label class="checkbox-item"><input type="checkbox" name="items" value="Giant Dreamy Denz ($200)"> Giant Dreamy Denz — $200</label>
+          <label class="checkbox-item"><input type="checkbox" name="items" value="Custom Balloon Arch"> Custom Balloon Arch</label>
+          <label class="checkbox-item"><input type="checkbox" name="items" value="Theme Stickers"> Theme Stickers</label>
+        </div>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="bf-theme">Party Theme / Colors</label>
+        <input type="text" id="bf-theme" name="theme" placeholder="e.g. princess pink & gold, dinosaurs, rodeo...">
+      </div>
+
+      <div class="form-group">
+        <label for="bf-details">Anything else we should know?</label>
+        <textarea id="bf-details" name="details" rows="4" placeholder="Number of kids, setup surface, timing, questions..."></textarea>
+      </div>
+
+      <button type="submit" class="btn" style="background:#fff;color:var(--pink-dark);border:none;cursor:pointer;">Submit Booking Inquiry</button>
+    </form>
 
     <div class="contact-grid">
       <div class="contact-card">
