@@ -128,7 +128,7 @@ section{padding:70px 0;}
 .c1{background:var(--pink);}
 .c2{background:var(--lavender);}
 .c3{background:var(--sky);}
-.c4{background:linear-gradient(135deg,#ffe3b3,#ffc266);}
+.c4{background:#ffc266;}
 .c5{background:var(--pink-dark);}
 .c6{background:linear-gradient(135deg,#cdecea,#a9d8d4);}
 .card{transition:transform .15s ease, box-shadow .15s ease;}
